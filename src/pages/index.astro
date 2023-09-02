@@ -5,7 +5,9 @@ import Icon from "../components/Icon.astro";
 
 <Layout title="Welcome to Astro.">
   <main>
-    <section class="flex flex-col text-center items-center md:w-[770px] mx-auto">
+    <section
+      class="flex flex-col text-center items-center md:w-[770px] mx-auto"
+    >
       <img
         src="./profile.jpeg"
         class="rounded-full w-[90px] mt-[90px]"
@@ -46,10 +48,64 @@ import Icon from "../components/Icon.astro";
           </div>
           <div class="py-2 px-3 bg-zinc-900 shadow-black shadow-sm rounded-xl">
             <Icon icon="vue" width="40" height="40" />
-            <small>VueJS </small>
+            <small>VueJS</small>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-zinc-900 p-[65px]">
+      <div class="md:flex w-full md:w-[1024px] mx-auto">
+        <div class="w-full md:w-3/12 mb-5 md:text-left md:m-0">
+          <strong class="uppercase font-semibold text-2xl">EXPERIENCE</strong>
+        </div>
+        <div class="w-full md:w-9/12">
+          <article>
+            <div class="flex">
+              <p>
+                <strong
+                  class="block text-yellow-500 uppercase font-extrabold text-xl"
+                  >Zapatos Top</strong
+                >
+                <small class="block mt-2 mb-4">Valparaiso, Chile</small>
+              </p>
+              <span class="ml-auto">nov. 2019 - feb. 2022</span>
+            </div>
+            <ol>
+              <li>
+                I digitized the internal processes of the company, replacing the
+                use of Excel spreadsheets, which resulted in greater operational
+                efficiency, reduction of information loss and improvement of
+                dispatch processes.
+              </li>
+            </ol>
+          </article>
+          <article class="mt-10">
+            <div class="flex">
+              <p>
+                <strong
+                  class="block text-yellow-500 uppercase font-extrabold text-xl"
+                  >Optical Collection</strong
+                >
+                <small class="block mt-2 mb-4">Montevideo, Uruguay</small>
+              </p>
+              <span class="ml-auto">ene. 2017 - mar. 2018</span>
+            </div>
+            <ol>
+              <li>
+                Made a successful adaptation and implementation of a plugin that
+                allowed Optical Collection to display the lenses in a 360° view
+              </li>
+            </ol>
+          </article>
         </div>
       </div>
     </section>
   </main>
 </Layout>
+
+<style>
+  ol {
+    list-style: circle;
+  }
+</style>
