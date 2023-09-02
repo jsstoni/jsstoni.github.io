@@ -1,0 +1,7 @@
+---
+const { icon, ...attributes } = Astro.props;
+---
+
+<svg {...attributes}>
+  <use xlink:href={`./sprite.svg#${icon}`}></use>
+</svg>
