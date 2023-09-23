@@ -10,7 +10,7 @@ import Icon from "../components/Icon.astro";
     >
       <img
         src="./profile.jpeg"
-        class="rounded-full w-[90px] mt-[90px]"
+        class="rounded-full w-[110px] mt-[110px]"
         alt=""
       />
       <h1>👋 Hi, I'am Jesus Perez</h1>
@@ -19,19 +19,20 @@ import Icon from "../components/Icon.astro";
       </h2>
       <a
         href="https://www.linkedin.com/in/jsstoni/"
-        class="bg-zinc-700 py-2 px-7 rounded-3xl mt-5">Contact me</a
+        class="bg-zinc-700 py-2 px-7 rounded-3xl mt-5 transform animate-bounce"
+        >Contact me</a
       >
     </section>
 
     <section class="flex flex-col items-center w-full mt-10">
       <h3
-        class="uppercase inline bg-zinc-900 py-1 px-10 -mb-5 z-10 shadow-black shadow-sm"
+        class="text-xl uppercase inline bg-zinc-900 py-1 px-10 -mb-5 z-10 shadow-black shadow-sm"
       >
         Skills
       </h3>
       <div class="bg-zinc-800 p-5 flex-1 w-full">
         <div
-          class="flex md:w-[1024px] mx-auto gap-5 justify-center items-center mt-5 text-center"
+          class="flex lg:w-[1024px] mx-auto gap-5 justify-center items-center mt-5 text-center"
         >
           <div class="py-2 px-3 bg-zinc-900 shadow-black shadow-sm rounded-xl">
             <Icon icon="JavaScript" width="40" height="40" />
@@ -61,8 +62,20 @@ import Icon from "../components/Icon.astro";
       </div>
     </section>
 
-    <section class="bg-gradient-to-r from-zinc-950 via-zinc-900 to-zinc-950 p-[65px]">
-      <div class="md:flex w-full md:w-[1024px] mx-auto">
+    <section
+      class="bg-gradient-to-r from-zinc-950 via-zinc-900 to-zinc-950 p-[65px]"
+    >
+      <article class="text-center mx-auto lg:w-[840px] pb-5 mb-10 border-b border-zinc-700">
+        <h3 class="text-center text-3xl mb-5 border-b border-zinc-700 inline-block">Bio</h3>
+        <p>
+          My main objective is to help small businesses take the leap towards
+          digitalizing their products and services. I firmly believe that
+          technology can be a powerful tool for business growth and efficiency,
+          and I enjoy collaborating with entrepreneurs and teams to make their
+          visions become a reality.
+        </p>
+      </article>
+      <div class="md:flex w-full lg:w-[1024px] mx-auto">
         <div class="w-full md:w-3/12 mb-5 md:text-left md:m-0">
           <strong class="uppercase font-semibold text-2xl">EXPERIENCE</strong>
         </div>
@@ -108,12 +121,14 @@ import Icon from "../components/Icon.astro";
         </div>
       </div>
 
-      <div class="md:flex w-full md:w-[1024px] my-10 mx-auto">
+      <div class="md:flex w-full lg:w-[1024px] my-10 mx-auto">
         <div class="w-full md:w-3/12 mb-5 md:text-left md:m-0">
           <strong class="uppercase font-semibold text-2xl">PROJECTS</strong>
         </div>
         <div class="w-full md:w-9/12 md:flex gap-x-3">
-          <div class="border border-zinc-700 rounded-lg p-4 my-3 md:my-0 md:flex-1">
+          <div
+            class="border border-zinc-700 rounded-lg p-4 my-3 md:my-0 md:flex-1"
+          >
             <a href="https://github.com/jsstoni/MVC-PHP" class="text-blue-500"
               >MVC-PHP</a
             >
@@ -126,7 +141,9 @@ import Icon from "../components/Icon.astro";
               ></small>PHP
             </p>
           </div>
-          <div class="border border-zinc-700 rounded-lg p-4 my-3 md:my-0 md:flex-1">
+          <div
+            class="border border-zinc-700 rounded-lg p-4 my-3 md:my-0 md:flex-1"
+          >
             <a
               href="https://github.com/jsstoni/Gochi-Money-manager"
               class="text-blue-500">Gochi-Money-manager</a
