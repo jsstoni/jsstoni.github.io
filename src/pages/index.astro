@@ -6,11 +6,11 @@ import Icon from "../components/Icon.astro";
 <Layout title="Jesus Perez - BannedNull">
   <main>
     <section
-      class="flex flex-col text-center items-center md:w-[770px] mx-auto"
+      class="flex flex-col text-center justify-center items-center md:w-[770px] mx-auto h-screen"
     >
       <img
         src="./profile.webp"
-        class="rounded-full mt-[110px]"
+        class="rounded-full"
         width="110"
         height="110"
         alt="profile bannednull"
@@ -24,140 +24,67 @@ import Icon from "../components/Icon.astro";
         class="bg-zinc-700 text-white py-2 px-7 rounded-3xl mt-5 transform animate-bounce"
         >Contact me</a
       >
-    </section>
 
-    <section class="flex flex-col items-center w-full mt-10">
-      <h3
-        class="text-xl uppercase inline bg-zinc-900 py-1 px-10 -mb-5 z-10 shadow-black shadow-sm"
-      >
-        Skills
-      </h3>
-      <div class="bg-zinc-800 p-5 flex-1 w-full">
-        <div
-          class="flex flex-wrap lg:w-[1024px] mx-auto gap-5 justify-center items-center mt-5 text-center"
-        >
-          <div class="py-2 px-3 bg-zinc-900 shadow-black shadow-sm rounded-xl">
-            <Icon icon="JavaScript" width="40" height="40" />
-            <small>JS</small>
-          </div>
-          <div class="py-2 px-3 bg-zinc-900 shadow-black shadow-sm rounded-xl">
-            <Icon icon="Node.js" width="40" height="40" />
-            <small>Node.js</small>
-          </div>
-          <div class="py-2 px-3 bg-zinc-900 shadow-black shadow-sm rounded-xl">
-            <Icon icon="PHP" width="40" height="40" />
-            <small>PHP</small>
-          </div>
-          <div class="py-2 px-3 bg-zinc-900 shadow-black shadow-sm rounded-xl">
-            <Icon icon="MySQL" width="40" height="40" />
-            <small>MySQL</small>
-          </div>
-          <div class="py-2 px-3 bg-zinc-900 shadow-black shadow-sm rounded-xl">
-            <Icon icon="Vue.js" width="40" height="40" />
-            <small>VueJS</small>
-          </div>
-          <div class="py-2 px-3 bg-zinc-900 shadow-black shadow-sm rounded-xl">
-            <Icon icon="nuxt" width="40" height="40" />
-            <small>Nuxt</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="bg-gradient-to-r from-zinc-950 via-zinc-900 to-zinc-950 p-[65px]"
-    >
-      <article class="text-center mx-auto lg:w-[840px] pb-5 mb-10 border-b border-zinc-700">
-        <h3 class="text-center text-3xl mb-5 border-b border-zinc-700 inline-block">Bio</h3>
-        <p>
-          My main objective is to help small businesses take the leap towards
-          digitalizing their products and services. I firmly believe that
-          technology can be a powerful tool for business growth and efficiency,
-          and I enjoy collaborating with entrepreneurs and teams to make their
-          visions become a reality.
-        </p>
-      </article>
-      <div class="md:flex w-full lg:w-[1024px] mx-auto">
-        <div class="w-full md:w-3/12 mb-5 md:text-left md:m-0">
-          <strong class="uppercase font-semibold text-2xl">EXPERIENCE</strong>
-        </div>
-        <div class="w-full md:w-9/12">
-          <article>
-            <div class="md:flex">
-              <p>
-                <strong
-                  class="block text-yellow-500 uppercase font-extrabold text-xl"
-                  >Zapatos Top</strong
-                >
-                <small class="block mt-2 mb-4">Valparaiso, Chile</small>
-              </p>
-              <span class="ml-auto">nov. 2019 - feb. 2022</span>
-            </div>
-            <ol>
-              <li>
-                I digitized the internal processes of the company, replacing the
-                use of Excel spreadsheets, which resulted in greater operational
-                efficiency, reduction of information loss and improvement of
-                dispatch processes.
-              </li>
-            </ol>
-          </article>
-          <article class="mt-10">
-            <div class="md:flex">
-              <p>
-                <strong
-                  class="block text-yellow-500 uppercase font-extrabold text-xl"
-                  >Optical Collection</strong
-                >
-                <small class="block mt-2 mb-4">Montevideo, Uruguay</small>
-              </p>
-              <span class="ml-auto">ene. 2017 - mar. 2018</span>
-            </div>
-            <ol>
-              <li>
-                Made a successful adaptation and implementation of a plugin that
-                allowed Optical Collection to display the lenses in a 360° view
-              </li>
-            </ol>
-          </article>
-        </div>
-      </div>
-
-      <div class="md:flex w-full lg:w-[1024px] my-10 mx-auto">
-        <div class="w-full md:w-3/12 mb-5 md:text-left md:m-0">
-          <strong class="uppercase font-semibold text-2xl">PROJECTS</strong>
-        </div>
-        <div class="w-full md:w-9/12 md:flex gap-x-3">
+      <div class="flex flex-col items-center w-full">
+        <div class="flex-1">
           <div
-            class="border border-zinc-700 rounded-lg p-4 my-3 md:my-0 md:flex-1"
+            class="flex flex-wrap mx-auto gap-5 justify-center items-center mt-5 text-center"
           >
-            <a href="https://github.com/jsstoni/MVC-PHP" class="text-blue-500"
-              >MVC-PHP</a
+            <div
+              class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
             >
-            <span class="text-[10px] text-white bg-zinc-700 p-1 px-3 rounded-3xl mx-3"
-              >Public</span
+              <Icon icon="expressjs_dark" width="40" height="40" />
+              <small>Express</small>
+            </div>
+
+            <div
+              class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
             >
-            <p class="mt-1">
-              <small
-                class="w-[15px] h-[15px] bg-purple-700 inline-block rounded-full mr-2 align-middle"
-              ></small>PHP
-            </p>
-          </div>
-          <div
-            class="border border-zinc-700 rounded-lg p-4 my-3 md:my-0 md:flex-1"
-          >
-            <a
-              href="https://github.com/jsstoni/Gochi-Money-manager"
-              class="text-blue-500">Gochi-Money-manager</a
+              <Icon icon="php" width="40" height="40" />
+              <small>PHP</small>
+            </div>
+
+            <div
+              class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
             >
-            <span class="text-[10px] text-white bg-zinc-700 p-1 px-3 rounded-3xl mx-3"
-              >Public</span
+              <Icon icon="nuxt" width="40" height="40" />
+              <small>Nuxt</small>
+            </div>
+
+            <div
+              class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
             >
-            <p class="mt-1">
-              <small
-                class="w-[15px] h-[15px] bg-green-700 inline-block rounded-full mr-2 align-middle"
-              ></small>Vue
-            </p>
+              <Icon icon="nextjs" width="40" height="40" />
+              <small>Next.js</small>
+            </div>
+
+            <div
+              class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
+            >
+              <Icon icon="mysql" width="40" height="40" />
+              <small>MySQL</small>
+            </div>
+
+            <div
+              class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
+            >
+              <Icon icon="javascript" width="40" height="40" />
+              <small>JS</small>
+            </div>
+
+            <div
+              class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
+            >
+              <Icon icon="vue" width="40" height="40" />
+              <small>VueJS</small>
+            </div>
+
+            <div
+              class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
+            >
+              <Icon icon="react" width="40" height="40" />
+              <small>React</small>
+            </div>
           </div>
         </div>
       </div>
