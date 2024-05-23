@@ -4,20 +4,27 @@ import Icon from "../components/Icon.astro";
 ---
 
 <Layout title="Jesus Perez - BannedNull">
-  <main>
+  <main class="relative">
+    <div
+      class="absolute -z-10 top-0 left-0 w-full h-full shadow-[inset_0_0_200px_50px_#000]"
+    >
+    </div>
     <section
       class="flex flex-col text-center justify-center items-center md:w-[770px] mx-auto h-screen"
     >
       <img
         src="./profile.webp"
-        class="rounded-full"
-        width="110"
-        height="110"
+        class="rounded-full mt-10 opacity-50"
+        width="130"
+        height="130"
         alt="profile bannednull"
       />
       <h1>👋 Hi, I'am Jesus Perez</h1>
-      <h2 class="text-[60px] leading-[65px] font-bold w-[90%] md:w-full">
-        Creative, Full Stack <span>Developer</span>
+      <h2 class="text-[60px] leading-[65px] font-bold w-[90%] md:w-full text-gray-300">
+        Creative, Full Stack <span
+          class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-yellow-500"
+          >Developer</span
+        >
       </h2>
       <a
         href="https://www.linkedin.com/in/jsstoni/"
@@ -25,7 +32,7 @@ import Icon from "../components/Icon.astro";
         >Contact me</a
       >
 
-      <div class="flex flex-col items-center w-full">
+      <div class="flex flex-col items-center w-full mt-10">
         <div class="flex-1">
           <div
             class="flex flex-wrap mx-auto gap-5 justify-center items-center mt-5 text-center"
@@ -33,29 +40,8 @@ import Icon from "../components/Icon.astro";
             <div
               class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
             >
-              <Icon icon="expressjs_dark" width="40" height="40" />
-              <small>Express</small>
-            </div>
-
-            <div
-              class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
-            >
               <Icon icon="php" width="40" height="40" />
               <small>PHP</small>
-            </div>
-
-            <div
-              class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
-            >
-              <Icon icon="nuxt" width="40" height="40" />
-              <small>Nuxt</small>
-            </div>
-
-            <div
-              class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
-            >
-              <Icon icon="nextjs" width="40" height="40" />
-              <small>Next.js</small>
             </div>
 
             <div
@@ -75,8 +61,15 @@ import Icon from "../components/Icon.astro";
             <div
               class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
             >
-              <Icon icon="vue" width="40" height="40" />
-              <small>VueJS</small>
+              <Icon icon="expressjs_dark" width="40" height="40" />
+              <small>Express</small>
+            </div>
+
+            <div
+              class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
+            >
+              <Icon icon="nextjs" width="40" height="40" />
+              <small>Next.js</small>
             </div>
 
             <div
@@ -85,10 +78,58 @@ import Icon from "../components/Icon.astro";
               <Icon icon="react" width="40" height="40" />
               <small>React</small>
             </div>
+
+            <div
+              class="py-2 px-3 bg-zinc-800 shadow-black shadow-sm rounded-xl"
+            >
+              <Icon icon="vue" width="40" height="40" />
+              <small>VueJS</small>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="w-full bg-neutral-950 p-10">
+      <div class="md:flex lg:w-[1024px] mx-auto">
+        <div class="w-full md:w-3/12 mb-5 md:text-left md:m-0">
+          <strong class="uppercase font-semibold text-2xl">EXPERIENCE</strong>
+        </div>
+        <div class="w-full md:w-9/12">
+          <article>
+            <div class="md:flex">
+              <p>
+                <strong
+                  class="block text-yellow-500 uppercase font-extrabold text-xl"
+                  >Zapatos Top</strong
+                ><small class="block mt-2 mb-4">Valparaiso, Chile</small>
+              </p><span class="ml-auto">nov. 2019 - feb. 2022</span>
+            </div><ol>
+              <li>
+                I digitized the internal processes of the company, replacing the
+                use of Excel spreadsheets, which resulted in greater operational
+                efficiency, reduction of information loss and improvement of
+                dispatch processes.
+              </li>
+            </ol>
+          </article><article class="mt-10">
+            <div class="md:flex">
+              <p>
+                <strong
+                  class="block text-yellow-500 uppercase font-extrabold text-xl"
+                  >Optical Collection</strong
+                ><small class="block mt-2 mb-4">Montevideo, Uruguay</small>
+              </p><span class="ml-auto">ene. 2017 - mar. 2018</span>
+            </div><ol>
+              <li>
+                Made a successful adaptation and implementation of a plugin that
+                allowed Optical Collection to display the lenses in a 360° view
+              </li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </div>
   </main>
 </Layout>
 
