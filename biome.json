@@ -6,7 +6,6 @@
     "useIgnoreFile": false
   },
   "files": {
-    "includes": ["**", "**/*.astro", "!node_modules", "!**/dist"],
     "ignoreUnknown": true
   },
   "formatter": {
@@ -16,13 +15,36 @@
     "indentStyle": "space",
     "indentWidth": 2
   },
-
   "javascript": {
     "formatter": {
       "quoteStyle": "single",
       "trailingCommas": "es5"
     }
   },
+  "overrides": [
+    {
+      "includes": ["**/*.astro"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noNonNullAssertion": "off"
+          },
+          "suspicious": {
+            "noUnknownAtRules": "off"
+          },
+          "nursery": {
+            "useSortedClasses": {
+              "level": "warn",
+              "fix": "safe",
+              "options": {
+                "functions": ["clsx", "cva", "cn"]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
   "linter": {
     "enabled": true,
     "rules": {
