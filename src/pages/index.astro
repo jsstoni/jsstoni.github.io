@@ -1,6 +1,12 @@
 ---
-import { ModeToggle } from '@/components/ModeToggle';
+import { Header } from '@/components/header';
 import '../global.css';
+import { About } from '@/components/about';
+import { Contact } from '@/components/contact';
+import { Footer } from '@/components/footer';
+import { Process } from '@/components/process';
+import { Projects } from '@/components/projects';
+import { Services } from '@/components/services';
 ---
 
 <script is:inline>
@@ -31,8 +37,13 @@ import '../global.css';
 		<title>Jsstoni ~ Jesus Antonio Perez</title>
 	</head>
 	<body>
-		<h1>JSSTONI</h1>
-		<p>Software Creator & SaaS Developer</p>
-		<ModeToggle client:load />
+		<Header client:load />
+		<About />
+		<Process />
+		<Projects />
+		<Services />
+		<Contact />
+
+		<Footer />
 	</body>
 </html>
